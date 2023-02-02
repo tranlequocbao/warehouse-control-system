@@ -1,11 +1,12 @@
-.App{
+.App {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.login-page{
+
+.login-page {
     position: relative;
     width: 80%;
     height: 80vh;
@@ -14,24 +15,27 @@
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-img{
+img {
     width: 100%;
-    
+
 }
-.background{
+
+.background {
     width: 50%;
-    height:75vh;
-    display:flex;
+    height: 75vh;
+    display: flex;
     align-items: center;
     margin-right: 20px;
     padding: 20px;
-  
+
 }
-.background img{
+
+.background img {
     border-radius: 10px;
-   
+
 }
-.formLogin{
+
+.formLogin {
     width: 50%;
     height: 75vh;
     display: flex;
@@ -40,121 +44,166 @@ img{
     flex-direction: column;
     text-align: center;
 }
-.loginimage{
+
+.loginimage {
     width: 80%;
 }
-.Imgtitle img{
+
+.Imgtitle img {
     height: 200px;
     width: 300px;
 }
-.inputInfo{
+
+.inputInfo {
     display: flex;
     flex-direction: column;
     -ms-flex-align: start;
-    width:50%;
+    width: 50%;
 }
-.input{
+
+.input {
     width: 100%;
 }
 
-@media screen and (max-width:768px){
-    .App{
+.changeForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:1490px) {
+    
+    .Imgtitle img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .App {
         align-items: flex-start;
     }
-    .login-page{
+
+    .login-page {
         position: relative;
         display: inline-block;
         margin-top: 40px;
         width: 90%;
     }
-    .background{
+
+    .background {
         display: flex;
         padding: 0;
         width: 100%;
         position: absolute;
-        margin:0;
+        margin: 0;
         bottom: 0;
-        top:0;
+        top: 0;
         height: 100%;
+        z-index: -1;
     }
-    .background img{
+
+    .background img {
 
         width: 100%;
         opacity: .2;
         height: 100%;
         object-fit: fill;
-        
+
     }
-    #login-form{
+
+    .formLogin {
         position: absolute;
-        top:0;
-        width:100%
+        top: 0;
+        width: 100%
     }
-    h2{
+
+    h2 {
         font-size: 20px;
     }
-    h3{
+
+    h3 {
         font-size: 15px;
     }
-    #login-form img{
+
+    .formLogin img {
         height: 100px;
         width: 200px;
         margin-bottom: 15px;
     }
-    .loginimage{
+
+    .loginimage {
         width: 100% !important;
     }
-   .loginimage img{
-    width: 300px !important;
-    height: 60px !important;
-   }
-   .inputInfo{
-    width: 80%;
-   }
-   .inputInfo input{
-    height: 40px;
-    
-   }
-   .input{
-    margin-bottom: 15px;
-   }
+
+    .loginimage img {
+        width: 300px !important;
+        height: 60px !important;
+    }
+
+    .inputInfo {
+        width: 80%;
+    }
+
+    .inputInfo input {
+        height: 40px;
+
+    }
+
+    .input {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 281px) {
-    .loginimage img{
+    .loginimage img {
         width: 200px !important;
         height: 50px !important;
-       }
-       h1{
+    }
+
+    h1 {
         font-size: 10px;
-       }
-       h2{
+    }
+
+    h2 {
         font-size: 8px;
-       }
-       .input{
+    }
+
+    .input {
         margin-bottom: 10px;
-       }
-       .inputInfo input{
+    }
+
+    .inputInfo input {
         height: 30px;
-        
-       }
+
+    }
 }
+
 @media screen and (max-height: 668px) {
-    .loginimage img{
+    .loginimage img {
         width: 150px !important;
         height: 25px !important;
-       }
-       h1{
+    }
+
+    h1 {
         font-size: 10px;
-       }
-       h2{
+    }
+
+    h2 {
         font-size: 8px;
-       }
-       .input{
+    }
+
+    .input {
         margin-bottom: 10px;
-       }
-       .inputInfo input{
+    }
+
+    .inputInfo input {
         height: 30px;
-        
-       }
+
+    }
 }
