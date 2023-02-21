@@ -32,7 +32,7 @@ function Login() {
     let pass = values.password;
     let keycode = values.keycode;
 
-    var url = "http://10.40.12.4:8089/api/Login";
+    var url = "http://113.174.246.52:8089/api/Login";
     axios
       .post(url, {
         user: user,
@@ -49,7 +49,7 @@ function Login() {
          
           if (decryptedData === pass) {
            
-            url = "http://10.40.12.4:8089/api/Login2";
+            url = "http://113.174.246.52:8089/api/Login2";
             axios
               .post(url, {
                 user: user,
@@ -101,7 +101,7 @@ function Login() {
     let UID = form.getFieldValue("username")?form.getFieldValue("username"):'';
     let PWS = form.getFieldValue("password");
     if (UID.length !== 0) {
-      var url = "http://10.40.12.4:8089/api/Login";
+      var url = "http://113.174.246.52:8089/api/Login";
       axios
         .post(url, {
           user: UID,
@@ -113,7 +113,7 @@ function Login() {
             var bytes = CryptoJS.AES.decrypt(res.data[0].Pass, "TMAC@25032018");
             var decryptedData = bytes.toString(CryptoJS.enc.Utf8);
             if (decryptedData === PWS) {
-              url = "http://10.40.12.4:8089/api/Sendkeycode";
+              url = "http://113.174.246.52:8089/api/Sendkeycode";
               axios
                 .post(url, {
                   user: UID,
@@ -167,7 +167,7 @@ function Login() {
    var cryptoPass = CryptoJS.AES.encrypt(values.password,"TMAC@25032018").toString();
     values.pass = cryptoPass
 
-     axios.post('http://10.40.12.4:8089/api/register',{values})
+     axios.post('http://113.174.246.52:8089/api/register',{values})
      .then(res=>{
        if(res.data==='ok'){
         notification.success({
