@@ -276,9 +276,11 @@ const Navbar = () => {
                                           style={{
                                                  margin: "0 16px",
                                                //  minHeight: '100vh'
+                                               height:'100%'
                                           }}
                                    >
                                           <Breadcrumb
+                                          className="breadcrumb"
                                                  style={{
                                                         margin: "16px 0",
                                                  }}
@@ -287,7 +289,8 @@ const Navbar = () => {
                                                  className="site-layout-background"
                                                  style={{
                                                         padding: 24,
-                                                        minHeight: 360,
+                                                        minHeight: 0,
+                                                        height:'100%'
                                                  }}
                                           >
                                                  {components[page]}
@@ -295,7 +298,12 @@ const Navbar = () => {
                                    </Content>
                                    <Footer
                                           style={{
-                                                 textAlign: "center",
+                                                 display:'flex',
+                                                 textAlign: "left",
+                                                 height:50,
+                                                 alignItems:'center',
+                                                 paddingLeft:20,
+                                             
                                           }}
                                    >
                                           Copyright 2022 © AS TEAM
